@@ -854,6 +854,7 @@ def change_lang(lang):
 def settle_bill():
     """Compute the sum each one have to pay to each other and display it"""
     transactions = g.project.get_transactions_to_settle_bill()
+    print(g.project.get_pretty_bills())
     settlement_form = SettlementForm()
     return render_template(
         "settle_bills.html",

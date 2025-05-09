@@ -3,7 +3,7 @@
 {% block body %}
 <header id="header" class="row">
   <div class="col-xs-12 col-sm-5 offset-md-2">
-    <h2>{{ _("Manage your shared <br />expenses, easily") }}</h2>
+    <h2>{{ _("Manage your shared <br />expenses, easily <br />{hrushi version - dev only}") }}</h2>
     {% if is_demo_project_activated %}
         <a href="{{ url_for('.demo') }}" class="tryout btn">
             {{ _("Try out the demo") }}
